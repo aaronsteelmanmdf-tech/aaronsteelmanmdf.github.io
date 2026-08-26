@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Student developer portfolio">
-    <title>Student Name | Developer Portfolio</title>
+    <title>Aaron Steelman | Developer Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrapper">
-            <a class="site-title" href="#home">Student Name</a>
+            <a class="site-title" href="#home">Aaron Steelman</a>
             <nav aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
@@ -27,9 +27,9 @@
             <div class="container hero-content">
                 <div>
                     <p class="eyebrow">Student Developer Portfolio</p>
-                    <h1>Hello, I’m <span>Student Name</span>.</h1>
+                    <h1>Hello, I’m <span>Aaron Steelman</span>.</h1>
                     <p class="hero-text">
-                        Replace this paragraph with a short professional introduction. Explain what kind of developer you are becoming, what you enjoy building, and what you hope to do next.
+                        I'm an ambitious programmer with an eye for detail and design. I love working on games and plan to one day have my own indie studio.
                     </p>
                     <div class="button-row">
                         <a class="button primary" href="#projects">View My Projects</a>
@@ -46,18 +46,18 @@
                 <p class="section-label">About Me</p>
                 <h2>Who I Am as a Developer</h2>
                 <p>
-                    Replace this paragraph with your developer story. You might discuss what led you to programming, the types of problems you enjoy solving, and how your skills have grown during the program.
+                    I have always loved games and even as a child would create games to play with my friends albeit much simpler. Over time, I got into Dungeons and Dragons and would eventually become a dungeon master for my own campaigns. From youth until now, I have designed and built games that were for table top but I always wanted to take the next step and develop video games. This led me to Full Sail University where I learned to code in C++ and developed my first game, "Into the Ether". I hope to continue working on it as well as other game projects as I discovered a love for programming and a deep understanding for logic. I would say my greatest strength thus far as a developer is my ability to quickly figure out and debug errors within a program.
                 </p>
 
                 <div class="skills-grid">
                     <article class="info-card">
                         <h3>Languages</h3>
-                        <p>C++, HTML, CSS</p>
+                        <p>C++</p>
                     </article>
 
                     <article class="info-card">
                         <h3>Tools</h3>
-                        <p>Visual Studio, Git, GitHub</p>
+                        <p>Visual Studio, Git, GitHub, Obsidian</p>
                     </article>
 
                     <article class="info-card">
@@ -81,21 +81,21 @@
                         <img src="images/project-placeholder.svg" alt="Placeholder screenshot for Project One">
                         <div class="project-content">
                             <p class="project-type">C++ Console Application</p>
-                            <h3>Project One Title</h3>
+                            <h3>Into the Ether</h3>
                             <p>
-                                Write a brief overview of the project. Explain the purpose of the program and what the user can do with it.
+                                Into the Ether was inspired in part by Star Trek and Space Odyssey and plays out similar to Oregon Trail. The objective of the game is to get your ship full of passengers from Earth to Centauri Prime. Along the way you encounter new planets, and aliens, some hostile. Manage your fuel, handle ship errors, and keep your ship in one piece to reach the end.
                             </p>
 
                             <h4>Key Features</h4>
                             <ul>
-                                <li>Describe one major feature.</li>
-                                <li>Describe another major feature.</li>
-                                <li>Describe your input validation or menu system.</li>
+                                <li>Random generators built into the game loop select the chain of events the player will encounter. This ensures that one journey will be different from the next.</li>
+                                <li>Items within the inventory are essential to getting to the end and ternary operators built into the ship class prevent players from over fueling, repairing beyond full, or regenerating shields beyond max.</li>
+                                <li>When a player is prompted for input, a try/catch within a while loop ensures that only numbers displayed next to options can be selected. Should a user attempt to put anything else it will tell them that it was invalid and what to put instead. The while loop for the prompt only exits once a valid number has been entered.</li>
                             </ul>
 
                             <h4>What I Learned</h4>
                             <p>
-                                Explain one challenge you faced, how you solved it, and what you learned from the process.
+                                One of the biggest challenges I faced was with inventory. Not just how items would be used on the player's ship but also how I would create a way out if the player decided at the last minute to not use an item. I solved this using by adding an Enum for item types and building a switch case around it to adjust how the item was used. I also added validation so a player couldn't waste a repair or refuel for example if they were full. They would instead get a message saying they couldn't use the item and why. The switch would also remove items of every type each time they were used, except one; the Exit type. I created this so it would end the selection loop without using an item.
                             </p>
 
                             <div class="project-links">
@@ -145,9 +145,9 @@
                 </p>
 
                 <div class="contact-links">
-                    <a class="button primary" href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
+                    <a class="button primary" href="https://github.com/aaronsteelmanmdf-tech/aaronsteelmanmdf.github.io" target="_blank" rel="noopener">GitHub</a>
                     <a class="button secondary" href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener">LinkedIn</a>
-                    <a class="button secondary" href="mailto:student@example.com">Professional Email</a>
+                    <a class="button secondary" href="mailto:aaron.steelman.mdf@gmail.com">Professional Email</a>
                 </div>
             </div>
         </section>
@@ -155,7 +155,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Student Name. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
+            <p>&copy; 2026 Aaron Steelman. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
         </div>
     </footer>
 </body>
